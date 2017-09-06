@@ -1,0 +1,109 @@
+
+
+Use social mechanisms to get team to go along...If don't have environment 
+
+reminder. commit three-stage thinking 
+1) WORK on a file
+stage the file for the next commit
+when all thie files for the latest task are good, project compiles, unit tests pass, etc
+
+...................................................................................
+ if the master copy is somewhere else, 
+ here's one expanded set of steps ..cs480 extreme programming
+ 1) get the newest updates from the main repo.. this changes the local copy
+    do it before I change the local file
+    git pull ...( get version for pulling from repo I cloned from 
+2) nano test.txt  * make file changes as desired
+3) at any time  git status # to check repo status 
+4) when a file is done/ ready, stage it for the next commit: 
+  git add test.txt
+5) when all the files are ready ( and will leave the repo in a good state, 
+                                  Then commit them...this only for local copy)
+git commit -m " descriptive msg for task" 
+
+6) push the changes back to the main repository
+      git push origin master 
+        where you are pushing TO ( here , where I cloned it from) 
+          ^ is which branch is being pushed 
+          
+7)git <commit stuff.py > add stuff .... happy wihh file, but still need to modify the file...
+
+push  push to final version .... 
+===========================================================================================
+8) Branching ... is good to create alternate branches to try things out
+create a branch 
+check out ..go to a branche
+git branch < desired -new branch name> creates a new branch
+
+git checkout < desired=branch to work on > 
+ 
+ git branch new-one
+ git checkout new-one
+ ... work work work ....
+ ... hey , i like it...
+ git checkout master # Go to branch to merge INTO
+ git merge new-one # merge new one int current. 
+
+-------------------------------------------------------------------------------------------------
+
+remote is a shared GIt repo that allows multiple collaborators to work on the same project
+
+( in cs458, wie use team's private Github repository as a remote) 
+Git clone < remote-location> < clone_name> 
+
+* when I clone a repo via <remote location>, as above
+Git gives this remote location the nickname/ alias: 
+
+origin
+===================================================================================================
+so, git push origin master
+.. . si pushing the master branch to the origin , the location of the original repo cloned from 
+
+git remote -v shows a list of trhe current git project's remotes
+
+git fetch .. let's me see if changes have been made 
+
+what is the difference between the above and git pull? 
+
+basically git pull seems appropriate, then 
+when are updating the clean local repo
+to the team's latest version before doing work;
+another suggested workflow
+start with eiher git pull
+
+or 
+
+git fetch
+git meerge
+
+2) create new branch to work on a new project 
+develop the user story on my branch 
+and commit my work 
+3) git pull or fetch and merge from the remote again ( in case new commits were made in the meantime) 
+
+4) push the branch up to the remote for review
+
+git push origin < my branch name > ... push my branch 
+will push my branch  < my-branch_name> 
+up to the remote origin... 
+
+
+and ================================================
+
+
+
+
+
+careful rewinding ..-- a few notes: 
+we'll 
+
+
+
+
+
+
+
+
+
+
+
